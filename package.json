@@ -1,6 +1,6 @@
 {
   "name": "quorra",
-  "version": "0.0.1",
+  "version": "0.0.1-alpha",
   "scripts": {},
   "dependencies": {
       "positron": "git+https://github.com/harishanchu/positron.git"
