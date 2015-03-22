@@ -9,6 +9,26 @@ var app = require('positron');
 
 /*
  |--------------------------------------------------------------------------
+ | Application Error Handler
+ |--------------------------------------------------------------------------
+ |
+ | Here you may handle any errors that occur in your application, including
+ | logging them or displaying custom views for specific errors. You may
+ | even register several error handlers to handle different types of
+ | exceptions. If next callback is executed, it will end up executing default
+ | error handler which shows the default error page and includes detailed stack trace
+ | during debug.
+ |
+ */
+
+app.error(function(error, code, request, response, next)
+{
+    // log error
+    next();
+});
+
+/*
+ |--------------------------------------------------------------------------
  | Maintenance Mode Handler
  |--------------------------------------------------------------------------
  |
