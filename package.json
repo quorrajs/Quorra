@@ -3,6 +3,8 @@
   "version": "0.0.1-alpha",
   "scripts": {},
   "dependencies": {
-      "positron": "git+https://github.com/harishanchu/positron.git"
+    "consolidate": "^0.11.0",
+    "jade": "^1.9.2",
+    "positron": "git+https://github.com/harishanchu/positron.git"
   }
 }
