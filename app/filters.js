@@ -5,7 +5,8 @@
  * @copyright 2015, QuorraJS. All rights reserved.
  * @license Licensed under MIT
  */
-var app = require('positron');
+var App = require('positron');
+var Route = App.router;
 
 /*
  |--------------------------------------------------------------------------
@@ -17,6 +18,12 @@ var app = require('positron');
  | application. Here you may also register your custom route filters.
  |
  */
-app.before(function(request, result, next) {
+App.before(function(request, result, next) {
+    next();
+});
+
+Route.filter('auth', function(request, response, next, value, value1) {
+    //console.log(value);
+    //console.log(value1);
     next();
 });

@@ -6,23 +6,13 @@
  * @license Licensed under MIT
  * @todo: remove temporary routes after development
  */
+
 var Route = (require('positron').router);
-Route.filter('auth1', function(request, response, next, value, value1) {
-    console.log(value);
-    console.log(value1);
-    next();
-});
-Route.filter('auth', function(request, response, next, value, value1) {
-   console.log(value);
-   console.log(value1);
-    next();
+
+Route.get('/', function(req, res){
+    res.view('index', { title: 'Quorra' });
 });
 
-Route.filter('auth3', function(request, response, next, value, value1) {
-    console.log(value);
-    console.log(value1);
-    next();
-});
 /*
 Route.get('/', {before:'auth', uses:function(req, res){
     res.writeHead(200, {'Content-Type': 'text/plain'});
