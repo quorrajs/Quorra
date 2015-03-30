@@ -5,7 +5,23 @@
  * @copyright 2015, QuorraJS. All rights reserved.
  * @license Licensed under MIT
  */
-var app = require('positron');
+var App = require('positron');
+var Log = App.log;
+
+var path = require('path');
+
+/*
+ |--------------------------------------------------------------------------
+ | Application Logger
+ |--------------------------------------------------------------------------
+ |
+ | Here we will configure the logger setup for the application which
+ | is built on top of the wonderful Winston library. By default we will
+ | build a basic log file setup which creates a single file for logs.
+ |
+ */
+
+Log.useFiles({filename: path.join(App.path.storage, 'logs/quorra.log')});
 
 /*
  |--------------------------------------------------------------------------
@@ -21,9 +37,9 @@ var app = require('positron');
  |
  */
 
-app.error(function(error, code, request, response, next)
+App.error(function(error, code, request, response, next)
 {
-    // log error
+    Log.error(error);
     next();
 });
 
@@ -38,7 +54,7 @@ app.error(function(error, code, request, response, next)
  |
  */
 
-app.down(function(req, res, next){
+App.down(function(req, res, next){
     res.writeHead(503, {'Content-Type': 'text/plain'});
     res.end("Be right back!");
 });
@@ -54,4 +70,4 @@ app.down(function(req, res, next){
  |
  */
 
-require(app.path.app + '/filters');
+require(path.join(App.path.app, 'filters'));
