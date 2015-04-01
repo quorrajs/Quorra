@@ -21,7 +21,7 @@ var path = require('path');
  |
  */
 
-Log.useFiles({filename: path.join(App.path.storage, 'logs/quorra.log')});
+Log.useFiles({filename: path.join(App.path.storage, 'logs/quorra.log'), level: 'silly'});
 
 /*
  |--------------------------------------------------------------------------
