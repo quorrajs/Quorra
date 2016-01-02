@@ -10,7 +10,9 @@ var config = {
     'queryParser': 'extended',
     'bodyParser': true,
     'serveStatic': true,
-    'cookieParser': true
+    'cookieParser': true,
+    'session': true,
+    'httpMethodOverride': true
 };
 
 module.exports = config;

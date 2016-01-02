@@ -68,7 +68,9 @@ var config = {
      |
      */
 
-    'key': '3duyXY4Yzd586UlJ21kzYuqaIQiKiVIH'
+    'key': '3duyXY4Yzd586UlJ21kzYuqaIQiKiVIH',
+
+    'trustProxy': false
 
 };
 
