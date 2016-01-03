@@ -12,7 +12,8 @@ var config = {
     'serveStatic': true,
     'cookieParser': true,
     'session': true,
-    'httpMethodOverride': true
+    'httpMethodOverride': true,
+    'localization': true
 };
 
 module.exports = config;
