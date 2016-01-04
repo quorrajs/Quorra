@@ -11,6 +11,7 @@ var User = {
         firstName: 'string',
         lastName: 'string'
     },
+    //@todo: note
     migrate: 'drop'
 };
 

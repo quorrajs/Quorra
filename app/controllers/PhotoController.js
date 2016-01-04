@@ -8,7 +8,7 @@
  */
 var BaseController = require('./BaseController');
 
-var PhotoController = BaseController.inherits(function(){
+var PhotoController = BaseController.extend(function(){
 
     /**
      * Display a listing of the resource.

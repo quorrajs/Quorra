@@ -6,7 +6,7 @@
  * @license Licensed under MIT
  */
 var Controller = (require('positron').Controller);
-var BaseController = Controller.inherits(function(){
+var BaseController = Controller.extend(function(){
 
 });
 
