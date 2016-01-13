@@ -13,7 +13,16 @@ var config = {
     // fall back from Dutch to German
     fallbacks:{'nl': 'de'},
 
-    // you may alter a site wide default locale
+    /*
+     |--------------------------------------------------------------------------
+     | Application Locale Configuration
+     |--------------------------------------------------------------------------
+     |
+     | The application locale determines the default locale that will be used
+     | by the translation service. You are free to set this value
+     | to any of the locales which will be supported by the application.
+     |
+     */
     defaultLocale: 'de',
 
     // whether to write new locale information to disk - defaults to true
