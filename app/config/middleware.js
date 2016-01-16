@@ -7,6 +7,7 @@
  */
 
 var config = {
+    'favicon': true,
     'queryParser': 'extended',
     'bodyParser': true,
     'serveStatic': true,
