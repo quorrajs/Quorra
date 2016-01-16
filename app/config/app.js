@@ -26,10 +26,25 @@ var config = {
      | Application URL
      |--------------------------------------------------------------------------
      |
+     | Here you may specify your application url. This will be used by url
+     | generator methods.
      |
      */
 
     'url': 'http://localhost:3000',
+
+
+    /*
+     |--------------------------------------------------------------------------
+     | Application port
+     |--------------------------------------------------------------------------
+     |
+     | The port setting determines which TCP port your app will be deployed on.
+     | If you ignore this configuration Quorra uses port 3000 by default.
+     |
+     */
+
+    'port': 3000,
 
     /*
      |--------------------------------------------------------------------------
