@@ -9,19 +9,50 @@
 
 var config = {
 
+    /*
+     |--------------------------------------------------------------------------
+     | Database Connections
+     |--------------------------------------------------------------------------
+     |
+     | Here are each of the database connections setup for your application.
+     | Of course, examples of configuring each database platform that is
+     | supported by Quorra is shown below to make development simple.
+     |
+     |
+     | All database work in Quorra is done through the Waterline adapters
+     | so make sure you have the adapter for your particular database of
+     | choice installed on your machine before you begin development.
+     |
+     | see https://github.com/balderdashy/waterline#community-adapters for community
+     | developed adapters
+     |
+     */
+
     'connections': {
 
-        /**
-         * Local disk storage for DEVELOPMENT ONLY
-         * Installed by default.
+        /*
+         |--------------------------------------------------------------------------
+         | sails-disk adapter connection config
+         |--------------------------------------------------------------------------
+         |
+         | Local disk storage for DEVELOPMENT ONLY
+         | Installed by default.
+         |
          */
+
         'localDiskDb': {
             'adapter': 'sails-disk'
         },
 
-        /**
-         * Run: npm install sails-mysql to install
+        /*
+         |--------------------------------------------------------------------------
+         | sails-mysql adapter connection config
+         |--------------------------------------------------------------------------
+         |
+         | Run: npm install sails-mysql to install adapter
+         |
          */
+
         'mysql': {
             'adapter': 'sails-mysql',
             'host': 'localhost',
@@ -30,9 +61,15 @@ var config = {
             'database': 'tron'
         },
 
-        /**
-         * Run: npm install sails-mongo to install
+        /*
+         |--------------------------------------------------------------------------
+         | sails-mongo adapter connection config
+         |--------------------------------------------------------------------------
+         |
+         | Run: npm install sails-mongo to install adapter
+         |
          */
+
         'mongo': {
             'adapter': 'sails-mongo',
             'host': 'localhost',
@@ -50,6 +87,7 @@ var config = {
      |
      |
      */
+
     'model': {
 
         /*
@@ -73,6 +111,7 @@ var config = {
          | tables/collections/etc. in your schema.
          |
          */
+
         'migrate': 'alter'
     }
 };
