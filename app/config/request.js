@@ -14,11 +14,13 @@ var config = {
      |--------------------------------------------------------------------------
      |
      | Indicates the app is behind a front-facing proxy, and to use the
-     | X-Forwarded-* headers to determine the connection and the IP address of
-     | the client. NOTE: X-Forwarded-* headers are easily spoofed and the detected
-     | IP addresses are unreliable.
+     | X-Forwarded-* headers to determine the connection and the IP address of the
+     | client. When enabled, Quorra attempts to determine the IP address of the
+     | client connected through the front-facing proxy, or series of proxies. The
+     | req.ips property, then, contains an array of IP addresses the client is
+     | connected through.
      |
-     | See docs(#quorra-behind-proxies) to find out the possible values for this
+     | Refer docs(#quorra-behind-proxies) to find out the possible values for this
      | option
      |
      */
