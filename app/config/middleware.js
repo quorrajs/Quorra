@@ -7,6 +7,17 @@
  */
 
 var config = {
+
+    /*
+     |--------------------------------------------------------------------------
+     | Favicon middleware
+     |--------------------------------------------------------------------------
+     |
+     | Middleware to respond to /favicon.ico requests with favicon.ico file from
+     | /public directory.
+     |
+     */
+
     'favicon': true,
 
     /*
@@ -29,7 +40,53 @@ var config = {
      */
 
     'queryParser': 'extended',
-    'bodyParser': true,
+
+    /*
+     |--------------------------------------------------------------------------
+     | Body Parser
+     |--------------------------------------------------------------------------
+     |
+     | This middleware parses request input data.
+     |
+     | bodyParser middleware internally wraps package `body-parser`
+     | (https://npmjs.org/package/body-parser) module.
+     |
+     | Disable body parsing by setting the value to false.
+     |
+     | This middleware provides the following parsers:
+     |
+     |  - JSON body parser(https://github.com/expressjs/body-parser#bodyparserjsonoptions)
+     |  - Raw body parser(https://github.com/expressjs/body-parser#bodyparserrawoptions)
+     |  - Text body parser(https://github.com/expressjs/body-parser#bodyparsertextoptions)
+     |  - URL-encoded form body parser(https://github.com/expressjs/body-parser#bodyparserurlencodedoptions)
+     |
+     | To enable any or all of these parsers set the value of bodyParser attribute
+     | to an object with any or all of these keys `json`, `raw`, `text`,
+     | `urlencoded` with value as `true` or options object.
+     |
+     | for example:
+     |
+     | 'bodyParser': {
+     |      `json`: true,
+     |      `raw`: {
+     |          `inflate`: true,
+     |          `limit`: '200kb'
+     |      },
+            `urlencoded`: true
+     |  }
+     |
+     | To find out all available options for each parser checkout body-parser
+     | docs: https://github.com/expressjs/body-parser
+     |
+     */
+
+    'bodyParser': {
+        'json': true,
+        'urlencoded': {
+            'extended': false
+        }
+    },
+
     'serveStatic': true,
     'cookieParser': true,
     'session': true,
