@@ -70,7 +70,18 @@ var config = {
      |
      */
 
-    'key': '3duyXY4Yzd586UlJ21kzYuqaIQiKiVIH'
+    'key': '3duyXY4Yzd586UlJ21kzYuqaIQiKiVIH',
+
+    /*
+     |--------------------------------------------------------------------------
+     | Attribution text
+     |--------------------------------------------------------------------------
+     |
+     | If true, enables the "X-Powered-By: Quorra" HTTP header.
+     |
+     */
+
+    'attributionText': true
 
 };
 
