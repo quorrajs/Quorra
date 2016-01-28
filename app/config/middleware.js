@@ -10,7 +10,7 @@ var config = {
 
     /*
      |--------------------------------------------------------------------------
-     | Favicon middleware
+     | Favicon
      |--------------------------------------------------------------------------
      |
      | Middleware to respond to /favicon.ico requests with favicon.ico file from
@@ -26,7 +26,7 @@ var config = {
      |--------------------------------------------------------------------------
      |
      | Disable query parsing by setting the value to false, or set the query
-     | parser to use either “simple” or “extended” or a custom query string
+     | parser to use either `simple` or `extended` or a custom query string
      | parsing function.
      |
      | The simple query parser is based on Node’s native query parser,
@@ -76,7 +76,7 @@ var config = {
      |  }
      |
      | To find out all available options for each parser checkout body-parser
-     | docs: https://github.com/expressjs/body-parser
+     | docs: https://www.npmjs.com/package/body-parser#api
      |
      */
 
@@ -87,10 +87,74 @@ var config = {
         }
     },
 
+    /*
+     |--------------------------------------------------------------------------
+     | Serve Static
+     |--------------------------------------------------------------------------
+     |
+     | Serves all file's in your application's public directory as static files.
+     | Behind the scene it uses serve-static(https://www.npmjs.com/package/serve-static)
+     | module.
+     |
+     | You can enable or disable this middleware with boolean values. When
+     | enabled with option `true` it will work with default `serve-static` module
+     | options. If you want to set custom options you can set it right away as
+     | an object instead of `true`
+     |
+     */
+
     'serveStatic': true,
+
+    /*
+     |--------------------------------------------------------------------------
+     | Cookie Parser
+     |--------------------------------------------------------------------------
+     |
+     | Parse Cookie header and populate req.cookies with an object keyed by the
+     | cookie names.
+     |
+     */
+
     'cookieParser': true,
+
+    /*
+     |--------------------------------------------------------------------------
+     | Session middleware
+     |--------------------------------------------------------------------------
+     |
+     | Provides session support.
+     |
+     */
+
     'session': true,
+
+    /*
+     |--------------------------------------------------------------------------
+     | HTTP Method Override
+     |--------------------------------------------------------------------------
+     |
+     | Lets you use HTTP verbs such as PUT or DELETE in places where the client
+     | doesn't support it.
+     |
+     | If the X-HTTP-Method-Override header is set, and if
+     | the method is a POST, then it is used to determine the "real" intended
+     | HTTP method.
+     |
+     | The _method request parameter can also be used to determine the HTTP method
+     |
+     */
+
     'httpMethodOverride': true,
+
+    /*
+     |--------------------------------------------------------------------------
+     | Localization
+     |--------------------------------------------------------------------------
+     |
+     | Provides localization/translation support
+     |
+     */
+
     'localization': true
 };
 
