@@ -42,9 +42,7 @@ function start(CB){
      | Load The Application
      |--------------------------------------------------------------------------
      |
-     | Here we will load this Positron application. We will keep this in a
-     | separate location so we can isolate the creation of an application
-     | from the actual running of the application with a given request.
+     | Here we will load this Positron application.
      |
      */
 
