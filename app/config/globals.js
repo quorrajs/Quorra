@@ -11,7 +11,7 @@ var config = {
 
     /*
      |--------------------------------------------------------------------------
-     | Quorra app object
+     | Quorra App object
      |--------------------------------------------------------------------------
      |
      | Expose the Positron instance representing your Quorra app. If this is
@@ -19,7 +19,7 @@ var config = {
      |
      */
 
-    'app': true,
+    'App': true,
 
     /*
      |--------------------------------------------------------------------------
@@ -29,7 +29,7 @@ var config = {
      | Expose each of your app's models as global variables (using their
      | "globalId"). E.g. a model defined in app/models/User.js would have a
      | globalId of User by default. If this is disabled, you can still access
-     | your models via app.models.*.
+     | your models via App.models.*.
      |
      */
 
