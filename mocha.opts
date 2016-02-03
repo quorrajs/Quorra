@@ -1,0 +1,7 @@
+--require should
+--reporter spec
+--ui bdd
+--timeout 5000
+
+app/tests/bootstrap.js
+app/tests/unit --recursive
