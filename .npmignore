@@ -1,0 +1,15 @@
+node_modules
+xunit.xml
+npm-debug.log
+
+.project
+.idea
+
+.DS_Store*
+Thumbs.db
+
+.tmp
+.foreverignore
+app/lang
+
+

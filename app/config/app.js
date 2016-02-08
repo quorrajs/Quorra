@@ -1,10 +1,3 @@
-/**
- * app.js
- *
- * @author: Harish Anchu <harishanchu@gmail.com>
- * @copyright 2015, QuorraJS. All rights reserved.
- * @license Licensed under MIT
- */
 
 var config = {
 
@@ -70,7 +63,7 @@ var config = {
      |
      */
 
-    'key': '3duyXY4Yzd586UlJ21kzYuqaIQiKiVIH',
+    'key': '768cb1e7a09d0a57a07ae6a36354514d',
 
     /*
      |--------------------------------------------------------------------------

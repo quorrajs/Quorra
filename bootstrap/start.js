@@ -1,12 +1,5 @@
-/**
- * start.js
- *
- * @author: Harish Anchu <harishanchu@gmail.com>
- * @copyright 2015, QuorraJS. All rights reserved.
- * @license Licensed under MIT
- */
 
-var app = require('positron');
+var App = require('positron');
 
 function start(CB){
     /*
@@ -19,7 +12,7 @@ function start(CB){
      | given environment, then we will automatically detect it for you.
      |
      */
-    var env = app.detectEnvironment({
+    var env = App.detectEnvironment({
 
         local: ['clu']
 
@@ -35,7 +28,7 @@ function start(CB){
      | may do so within the paths.js file and they will be bound here.
      |
      */
-    app.bindInstallPaths(require('./paths'));
+    App.bindInstallPaths(require('./paths'));
 
     /*
      |--------------------------------------------------------------------------
@@ -46,7 +39,7 @@ function start(CB){
      |
      */
 
-    app.load(CB, env);
+    App.load(CB, env);
 }
 
 module.exports = start;

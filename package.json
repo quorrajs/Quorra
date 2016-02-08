@@ -1,10 +1,34 @@
 {
   "name": "quorra",
-  "version": "0.0.1-alpha",
+  "version": "1.0.0-alpha",
   "scripts": {},
   "dependencies": {
+    "positron": "1.0.0-alpha",
     "consolidate": "^0.11.0",
     "jade": "^1.9.2",
     "sails-disk": "^0.10.7"
-  }
+  },
+  "description": "The QuorraJS Framework",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/quorrajs/Quorra"
+  },
+  "keywords": [
+    "quorra",
+    "quorrajs",
+    "quorra.js",
+    "web",
+    "framework",
+    "rest",
+    "restful",
+    "api"
+  ],
+  "author": "Harish Anchu <harishanchu@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/quorrajs/Quorra/issues"
+  },
+  "homepage": "https://github.com/quorrajs/Quorra"
 }
