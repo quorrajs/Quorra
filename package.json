@@ -1,9 +1,9 @@
 {
   "name": "quorra",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.3",
   "scripts": {},
   "dependencies": {
-    "positron": "1.0.0-alpha.2",
+    "positron": "1.0.0-alpha.3",
     "consolidate": "~0.11.0",
     "jade": "~1.9.2",
     "sails-disk": "~0.10.7"
