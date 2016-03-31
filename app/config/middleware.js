@@ -148,7 +148,7 @@ var config = {
      |
      */
 
-    'localization': true
+    'localization': false
 };
 
 module.exports = config;
