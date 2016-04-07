@@ -11,11 +11,15 @@ var config = {
      | requests. By default, we will use the lightweight native driver but
      | you may specify any of the other wonderful drivers provided here.
      |
-     | Supported: "file", "database"
+     | Supported: "memory", "file", "database"
+     |
+     | Warning: Memory session driver is purposely not designed for a production
+     | environment. It will leak memory under most conditions, does not scale past
+     | a single process, and is meant for debugging and developing.
      |
      */
 
-    'driver': 'file',
+    'driver': 'memory',
 
     /*
      |--------------------------------------------------------------------------
@@ -146,7 +150,21 @@ var config = {
      |
      */
 
-    'httpOnly': true
+    'httpOnly': true,
+
+    /**
+     |-----------------------------------------------------------------------------
+     | Encrypt session
+     |-----------------------------------------------------------------------------
+     |
+     | If you need all stored session data to be encrypted, set the encrypt
+     | configuration option to true.
+     |
+     | default: false
+     |
+     */
+
+    'encrypt': false
 };
 
 module.exports = config;
