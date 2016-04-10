@@ -5,7 +5,7 @@
 
 NodeJS Framework For Web Riders
 
-[Documentation](https://quorrajs.org/documentation.html)
+[Documentation](https://quorrajs.org/docs/v1)
 
 ## License
 
