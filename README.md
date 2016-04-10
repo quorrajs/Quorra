@@ -10,7 +10,3 @@ NodeJS Framework For Web Riders
 ## License
 
 The QuorraJS Framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
-
-## Copyright
-
-Copyright (c) 2015-2016, QuorraJS <hello@quorrajs.org>
