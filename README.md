@@ -20,11 +20,12 @@ QuorraJS specialities include:
  - Super cool and pretty [error handler interface](https://github.com/quorrajs/Ouch) which makes debugging a lot easier.
  - Fast without the need for complex optimization.
 
- and much more.
+and much more.
 
 ## Documentation
 
 [Quickstart](https://quorrajs.org/docs/v1/preface/quickstart.html)
+
 [Getting started](https://quorrajs.org/docs/v1/getting-started/installation.html)
 
 ## Questions
