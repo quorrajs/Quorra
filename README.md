@@ -9,11 +9,32 @@ NodeJS Framework For Web Riders
 ## Intro
 
 QuorraJS is a NodeJS MVC framework for building elegant web applications. It provides a clean application structure
-and simple API's to write applications in a expressive beautiful syntax.
+and simple API's to develop applications in a expressive beautiful syntax.
+
+QuorraJS specialities include:
+
+ - Transparent well documented code base written mostly by following JS prototype design.
+ - Dead simple and powerful [router](https://quorrajs.org/docs/v1/getting-started/routing.html).
+ - Restful [resource routes](https://quorrajs.org/docs/v1/getting-started/controllers.html#restful-resource-controllers) support.
+ - Easy-to-use [CLI wizard](https://quorrajs.org/docs/v1/quorra-cli/overview.html)
+ - Super cool and pretty [error handler interface](https://github.com/quorrajs/Ouch) which makes debugging a lot easier.
+ - Fast without the need for complex optimization
+
+ and much more.
 
 ## Documentation
 
-[Documentation](https://quorrajs.org/docs/v1)
+[Quickstart](https://quorrajs.org/docs/v1/preface/quickstart.html)
+[Getting started](https://quorrajs.org/docs/v1/getting-started/installation.html)
+
+## Questions
+
+For questions and support please use the [Gitter chat room](https://gitter.im/quorrajs/quorrajs). The issue list of this repo is exclusively for bug
+reports and feature requests.
+
+## Stay In Touch
+
+For latest releases and announcements, follow on Twitter: @quorrajs
 
 ## License
 
