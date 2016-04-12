@@ -16,9 +16,9 @@ QuorraJS specialities include:
  - Transparent well documented code base written mostly by following JS prototype design.
  - Dead simple and powerful [router](https://quorrajs.org/docs/v1/getting-started/routing.html).
  - Restful [resource routes](https://quorrajs.org/docs/v1/getting-started/controllers.html#restful-resource-controllers) support.
- - Easy-to-use [CLI wizard](https://quorrajs.org/docs/v1/quorra-cli/overview.html)
+ - Easy-to-use [CLI wizard](https://quorrajs.org/docs/v1/quorra-cli/overview.html).
  - Super cool and pretty [error handler interface](https://github.com/quorrajs/Ouch) which makes debugging a lot easier.
- - Fast without the need for complex optimization
+ - Fast without the need for complex optimization.
 
  and much more.
 
