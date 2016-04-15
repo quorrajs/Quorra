@@ -35,7 +35,7 @@ reports and feature requests.
 
 ## Stay In Touch
 
-For latest releases and announcements, follow on Twitter: @quorrajs
+For latest releases and announcements, follow on Twitter: [@quorrajs](https://twitter.com/quorrajs)
 
 ## License
 
