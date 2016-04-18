@@ -12,7 +12,7 @@ var User = {
     },
 
     //@todo: note
-    migrate: 'drop'
+    migrate: 'drop',
 
     getRememberTokenName: function () {
         return 'remember_token';
