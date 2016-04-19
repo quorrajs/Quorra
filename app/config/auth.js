@@ -10,7 +10,7 @@ var config = {
      |
      */
 
-    'model': 'user'
+    'model': 'User'
 
 
 };
