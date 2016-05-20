@@ -1,4 +1,3 @@
-
 var App = require('positron');
 var Route = App.router;
 
@@ -12,14 +11,68 @@ var Route = App.router;
  | application. Here you may also register your custom route filters.
  |
  */
-App.before(function(request, result, next) {
+App.before(function (request, result, next) {
     next();
 });
 
-Route.filter('auth', function(request, response, next, value, value1) {
-    //console.log(value);
-    //console.log(value1);
-    next();
+/*
+ |--------------------------------------------------------------------------
+ | Authentication Filters
+ |--------------------------------------------------------------------------
+ |
+ | The following filters are used to verify that the user of the current
+ | session is logged into this application. The "basic" filter easily
+ | integrates HTTP Basic authentication for quick, simple checking.
+ |
+ */
+
+Route.filter('auth', function (request, response, next) {
+    request.auth.guest(function (result) {
+        if (result) {
+            if (request.xhr) {
+                response.abort(401);
+            } else {
+                response.rediret('/login');
+            }
+        } else {
+            next();
+        }
+    });
+});
+
+Route.filter('auth.basic', function (request, response, next) {
+    req.auth.basic(function (result) {
+        if (result) {
+            next();
+        } else {
+            var error = new Error('Invalid credentials');
+
+            error.status = 401;
+            response.setHeader('WWW-Authenticate', 'Basic');
+            response.abort(error);
+        }
+    });
+});
+
+/*
+ |--------------------------------------------------------------------------
+ | Guest Filter
+ |--------------------------------------------------------------------------
+ |
+ | The "guest" filter is the counterpart of the authentication filters as
+ | it simply checks that the current user is not logged in. A redirect
+ | response will be issued if they are, which you may freely change.
+ |
+ */
+
+Route.filter('guest', function (request, response, next) {
+    request.auth.check(function (result) {
+        if (result) {
+            response.redirect('/');
+        } else {
+            next();
+        }
+    })
 });
 
 /*
@@ -33,9 +86,8 @@ Route.filter('auth', function(request, response, next, value, value1) {
  |
  */
 
-Route.filter('csrf', function(request, response, next) {
-    if (App.session.getToken() !== request.input.get('_token'))
-    {
+Route.filter('csrf', function (request, response, next) {
+    if (request.session.getToken() !== request.input.get('_token')) {
         throw new Error('Token mismatch');
     } else {
         next();
