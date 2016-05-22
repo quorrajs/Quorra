@@ -11,9 +11,14 @@ var User = {
         remember_token: 'string'
     },
 
-    //@todo: note
     migrate: 'drop',
 
+    /**
+     * Get model remember token field name.
+     * Used by quorra auth service.
+     *
+     * @returns {string}
+     */
     getRememberTokenName: function () {
         return 'remember_token';
     }

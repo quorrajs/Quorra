@@ -32,7 +32,7 @@ Route.filter('auth', function (request, response, next) {
             if (request.xhr) {
                 response.abort(401);
             } else {
-                response.rediret('/login');
+                response.redirect('/login');
             }
         } else {
             next();
