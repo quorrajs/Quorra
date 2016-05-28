@@ -7,13 +7,16 @@ before(function(done) {
     process.env.NODE_ENV = 'testing';
 
     require('../../bootstrap/start')(function(app){
-        app.listen();
+        app.listen(function (server) {
+            // here you can load fixtures, etc.
 
-        // here you can load fixtures, etc.
+            done();
+        });
     });
 });
 
 after(function(done) {
     // here you can clear fixtures, etc.
 
+    done();
 });
