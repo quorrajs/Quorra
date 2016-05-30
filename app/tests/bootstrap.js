@@ -1,13 +1,15 @@
+var server;
 
-before(function(done) {
-
+before(function (done) {
     // Increase the Mocha timeout so that Quorra has enough time to run the application.
     this.timeout(5000);
 
     process.env.NODE_ENV = 'testing';
 
-    require('../../bootstrap/start')(function(app){
-        app.listen(function (server) {
+    require('../../bootstrap/start')(function (app) {
+        app.listen(function (response) {
+            server = response;
+
             // here you can load fixtures, etc.
 
             done();
@@ -15,8 +17,11 @@ before(function(done) {
     });
 });
 
-after(function(done) {
+after(function (done) {
+
     // here you can clear fixtures, etc.
 
-    done();
+    server.close(function () {
+        done();
+    })
 });

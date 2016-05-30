@@ -5,3 +5,4 @@
 
 app/tests/bootstrap.js
 app/tests/unit --recursive
+app/tests/integration --recursive
