@@ -1,12 +1,12 @@
 {
   "name": "quorra",
-  "version": "1.0.0-beta.7",
+  "version": "1.0.0-beta.8",
   "scripts": {
     "start": "quorra ride",
     "test": "mocha --opts app/tests/mocha.opts"
   },
   "dependencies": {
-    "positron": "1.0.0-beta.5",
+    "positron": "1.0.0-beta.6",
     "consolidate": "~0.11.0",
     "jade": "~1.9.2",
     "sails-disk": "~0.10.7"
