@@ -3,10 +3,11 @@ var User = {
     attributes: {
         email: {
             required: true,
-            email: true
+            type: 'email'
         },
         password: {
-            required: true
+            required: true,
+            type: 'string'
         },
         remember_token: 'string'
     },
