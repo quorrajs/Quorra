@@ -1,6 +1,6 @@
 {
   "name": "quorra",
-  "version": "1.0.0-beta.11",
+  "version": "1.0.0-beta.12",
   "scripts": {
     "start": "quorra ride",
     "test": "mocha --opts app/tests/mocha.opts"
@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "mocha": "^2.5.3",
+    "nodemailer-stub-transport": "^1.0.0",
     "should": "^8.4.0",
     "supertest": "^1.2.0"
   },

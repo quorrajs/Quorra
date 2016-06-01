@@ -11,9 +11,6 @@ var config = {
      | that driver manually using npm install command
      | Find more drivers at https://github.com/nodemailer/nodemailer#send-using-a-transport-plugin
      |
-     | Please ensure that you have installed nodemailer-stub-transport in your dev 
-     | environment before running tests with mail service usage
-     |
      */
 
     'driver': 'nodemailer-stub-transport'
