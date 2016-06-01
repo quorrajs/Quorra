@@ -6,14 +6,15 @@
     "test": "mocha --opts app/tests/mocha.opts"
   },
   "dependencies": {
-    "positron": "1.0.0-beta.7",
     "consolidate": "~0.11.0",
     "jade": "~1.9.2",
+    "positron": "1.0.0-beta.7",
     "sails-disk": "~0.10.7"
   },
   "devDependencies": {
     "mocha": "^2.5.3",
-    "should": "^8.4.0"
+    "should": "^8.4.0",
+    "supertest": "^1.2.0"
   },
   "description": "The QuorraJS Framework",
   "main": "index.js",
