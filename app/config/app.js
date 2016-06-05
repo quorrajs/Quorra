@@ -67,6 +67,33 @@ var config = {
 
     /*
      |--------------------------------------------------------------------------
+     | Autoloaded Service Providers
+     |--------------------------------------------------------------------------
+     |
+     | The service providers listed here will be automatically loaded on the
+     | server lift and will attach the service provided, to the application
+     | instance. Feel free to add your own services to this array to grant
+     | expanded functionality to your applications.
+     |
+     */
+
+    'providers': [
+        'positron/exception/ExceptionServiceProvider',
+        'positron/log/LogServiceProvider',
+        'positron/database/ModelServiceProvider',
+        'positron/auth/AuthServiceProvider',
+        'positron/routing/RoutingServiceProvider',
+        'positron/routing/ControllerServiceProvider',
+        'positron/view/ViewServiceProvider',
+        'positron/encryption/EncryptionServiceProvider',
+        'positron/session/SessionServiceProvider',
+        'positron/translation/TranslationServiceProvider',
+        'positron/mail/MailServiceProvider',
+        'positron/hashing/HashServiceProvider'
+    ],
+
+    /*
+     |--------------------------------------------------------------------------
      | Attribution text
      |--------------------------------------------------------------------------
      |

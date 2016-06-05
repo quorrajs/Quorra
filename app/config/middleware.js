@@ -152,14 +152,14 @@ var config = {
 
     /*
      |--------------------------------------------------------------------------
-     | Localization
+     | Translation
      |--------------------------------------------------------------------------
      |
      | Provides localization/translation support
      |
      */
 
-    'localization': false
+    'translation': false
 };
 
 module.exports = config;
