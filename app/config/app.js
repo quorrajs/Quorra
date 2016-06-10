@@ -86,6 +86,7 @@ var config = {
         'positron/routing/ControllerServiceProvider',
         'positron/view/ViewServiceProvider',
         'positron/encryption/EncryptionServiceProvider',
+        'positron/cookie/CookieServiceProvider',
         'positron/session/SessionServiceProvider',
         'positron/translation/TranslationServiceProvider',
         'positron/mail/MailServiceProvider',
