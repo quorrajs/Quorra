@@ -95,6 +95,25 @@ var config = {
 
     /*
      |--------------------------------------------------------------------------
+     | Long Stack Trace
+     |--------------------------------------------------------------------------
+     |
+     | A common problem when debugging event-driven JavaScript is stack traces
+     | are limited to a single "event", so it's difficult to trace the code path
+     | that caused an error. Quorra solves this by the use of longjohn module.
+     |
+     | It is not recommended to use this feature in production environments.
+     | The data collection puts a lot of strain on V8's garbage collector
+     | and can greatly slow down heavily-loaded applications. Hence by default
+     | Quorra disables long stack trace in production environment even if you
+     | enable it here.
+     |
+     */
+
+    'longStackTrace': false,
+
+    /*
+     |--------------------------------------------------------------------------
      | Attribution text
      |--------------------------------------------------------------------------
      |
