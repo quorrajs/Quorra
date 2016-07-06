@@ -121,7 +121,30 @@ var config = {
      |
      */
 
-    'attributionText': true
+    'attributionText': true,
+
+    /*
+     |--------------------------------------------------------------------------
+     | Aliases
+     |--------------------------------------------------------------------------
+     |
+     | You can define aliases to Quorra framework(Positron module) internal
+     | classes/modules. To require a internal module now you can just pass the
+     | alias name instead of full module namespace to the global use method.
+     |
+     | For example, you can do:
+     |
+     | var ServiceProvider =  use('ServiceProvider') ;
+     |
+     | instead of
+     |
+     | var ServiceProvider = use('positron/support/ServiceProvider');
+     |
+     */
+
+    'aliases': {
+        'ServiceProvider': 'positron/support/ServiceProvider'
+    }
 
 };
 
