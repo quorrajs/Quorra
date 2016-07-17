@@ -19,7 +19,27 @@ var config = {
         path.resolve(__dirname, '../../resources/views')
     ],
 
+    /*
+     |--------------------------------------------------------------------------
+     | Cache
+     |--------------------------------------------------------------------------
+     |
+     | Enable in memory view caching
+     |
+     */
     'cache': false,
+
+    /*
+     |--------------------------------------------------------------------------
+     | Template helpers
+     |--------------------------------------------------------------------------
+     |
+     | Quorra supports some default template helper methods. Setting this to
+     | true will expose those methods to app.locals object so that it will be
+     | available for you to use within your views.
+     |
+     */
+    'helpers': true,
 
     /*
      |--------------------------------------------------------------------------
