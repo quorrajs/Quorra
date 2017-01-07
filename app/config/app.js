@@ -1,4 +1,4 @@
-
+var path = require('path');
 var config = {
 
     /*
@@ -78,6 +78,9 @@ var config = {
      */
 
     'providers': [
+        /**
+         *  Quorra framework service providers
+         */
         'positron/exception/ExceptionServiceProvider',
         'positron/log/LogServiceProvider',
         'positron/database/ModelServiceProvider',
@@ -90,7 +93,12 @@ var config = {
         'positron/session/SessionServiceProvider',
         'positron/translation/TranslationServiceProvider',
         'positron/mail/MailServiceProvider',
-        'positron/hashing/HashServiceProvider'
+        'positron/hashing/HashServiceProvider',
+
+        /**
+         * Application service providers
+         */
+        path.join(__dirname,'../providers/AuthServiceProvider')
     ],
 
     /*
@@ -143,7 +151,8 @@ var config = {
      */
 
     'aliases': {
-        'ServiceProvider': 'positron/support/ServiceProvider'
+        'ServiceProvider': 'positron/support/ServiceProvider',
+        'AuthServiceProvider': 'positron/support/AuthServiceProvider'
     }
 
 };
