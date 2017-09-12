@@ -78,8 +78,8 @@ var config = {
      */
 
     'providers': [
-        /**
-         *  Quorra framework service providers
+        /*
+         * Quorra Framework Service Providers.
          */
         'positron/exception/ExceptionServiceProvider',
         'positron/log/LogServiceProvider',
@@ -95,10 +95,11 @@ var config = {
         'positron/mail/MailServiceProvider',
         'positron/hashing/HashServiceProvider',
 
-        /**
-         * Application service providers
+        /*
+         * Application Service Providers.
          */
-        path.join(__dirname,'../providers/AuthServiceProvider')
+
+        'app/providers/AuthServiceProvider'
     ],
 
     /*
@@ -152,7 +153,7 @@ var config = {
 
     'aliases': {
         'ServiceProvider': 'positron/support/ServiceProvider',
-        'AuthServiceProvider': 'positron/support/AuthServiceProvider'
+        'AuthServiceProvider': 'positron/foundation/support/providers/AuthServiceProvider'
     }
 
 };
