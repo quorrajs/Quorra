@@ -1,6 +1,6 @@
 
 var Controller = (require('positron').Controller);
-var BaseController = Controller.extend(function(){
+var BaseController = Controller.extend(function () {
 
 });
 

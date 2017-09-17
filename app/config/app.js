@@ -153,7 +153,8 @@ var config = {
 
     'aliases': {
         'ServiceProvider': 'positron/support/ServiceProvider',
-        'AuthServiceProvider': 'positron/foundation/support/providers/AuthServiceProvider'
+        'AuthServiceProvider': 'positron/foundation/support/providers/AuthServiceProvider',
+        'BaseUser': 'positron/foundation/auth/user'
     }
 
 };

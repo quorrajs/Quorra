@@ -127,6 +127,7 @@ var config = {
      |--------------------------------------------------------------------------
      |
      | Provides authentication support.
+     | Don't forget enable session middleware when auth middleware is enabled.
      |
      */
 

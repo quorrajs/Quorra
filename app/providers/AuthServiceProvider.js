@@ -1,7 +1,6 @@
 var ServiceProvider = use('AuthServiceProvider');
 
 var AuthServiceProvider = ServiceProvider.extend(function(app) {
-    this.__app = app;
     this.__policies = {};
 });
 

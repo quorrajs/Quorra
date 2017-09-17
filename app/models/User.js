@@ -1,5 +1,5 @@
-
-var User = {
+var BaseUser = use('BaseUser');
+var User = BaseUser.merge({
     attributes: {
         email: {
             required: true,
@@ -23,7 +23,7 @@ var User = {
     getRememberTokenName: function () {
         return 'remember_token';
     }
-};
+});
 
 module.exports = User;
 
