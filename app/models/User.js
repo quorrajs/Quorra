@@ -1,5 +1,5 @@
 var BaseUser = use('BaseUser');
-var User = BaseUser.merge({
+var User = BaseUser.extend({
     attributes: {
         email: {
             required: true,
